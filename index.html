@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prc5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(to right, #000000, #FFFFFF);
+        }
+        *{
+            /* color: white; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .divi1{
+            /* border: 1px solid white; */
+            width: 400px;
+            /* height: 669px; */
+            margin: auto;
+            background-color: white;
+            margin-top: 14px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px #888888;
+            padding: 13px;
+        
+        }
+
+        button{
+            background-color: rgb(34, 34, 193);
+            padding: 8px;
+            width: 110px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+        button:active{
+            opacity: 0.4;
+        }
+        input{
+            padding: 6px;
+            position: relative;
+            left: 10px;
+        }
+        .inp{
+            width: 350px;
+        }
+        h4{
+            position: relative;
+            left: 10px;
+            color: rgb(91, 87, 87);
+        }
+        span{
+            position: relative;
+            left: 10px;
+        }
+        .divibtn{
+            text-align: center;
+        }
+        .sel{
+            padding: 4px;
+            width: 300px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            left: 10px;
+        }
+        div{
+            margin-top: 10px;
+        }
+        .divich{
+            margin-top: 12px;
+        }
+        @media(max-width:460px){
+            .divi1{
+                width: 350px;
+            }
+            .inp{
+                width: 300px;
+            }
+            .sel{
+                width: 260px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="divi1">
+
+    <h2 style="text-align: center;">Form</h2>
+    <hr>
+
+    <div>
+    <h4>First name</h4>
+    <input class="inp" type="text" minlength="4" maxlength="8" placeholder="Type your first name">
+
+</div>
+
+
+<div>
+    <h4>Last name</h4>
+    <input class="inp" type="text" minlength="4" maxlength="6" placeholder="Type your last name">
+
+</div>
+
+<div>
+    <h4>Date of Birth</h4>
+
+    <input class="inp" type="date" required>
+</div>
+
+<div>
+    <h4>Email</h4>
+    <input class="inp" type="email" required placeholder="Type your Email">
+</div>
+
+<div>
+    <h4>Select your State</h4>
+    <select class="sel" name="" id="">
+        <option value="">Telangana</option>
+        <option value="">Karnataka</option>
+        <option value="">Kerala</option>
+        <option value="">Pune</option>
+        <option value="">Mumbai</option>
+    </select>
+</div>
+
+<div class="divich">
+    <h4>Choose your Skills</h4>
+
+    <div>
+    <input class="check" type="checkbox"> <span>HTML</span>
+   
+</div>
+
+<div> <input class="check" type="checkbox"> <span>CSS</span>
+
+
+</div>
+
+<div>
+    <input class="check" type="checkbox"> <span>JavaScript</span>
+    
+</div>
+
+<div>
+    <input class="check" type="checkbox"> <span>Python</span>
+    
+</div><div>
+    <input class="check" type="checkbox"> <span>c++</span>
+    
+</div>
+</div>
+
+<div style="margin-top: 12px;">
+    <h4>Choose your gender</h4>
+
+    <div>
+
+    <input type="radio" name="qw" id=""> <span>Male</span>
+</div>
+
+<div>
+    <input type="radio" name="qw"> <span>Female</span>
+</div>
+
+<div>
+    <input type="radio" name="qw"> <span>others</span>
+</div>
+</div>
+
+
+<div class="divibtn">
+    <button type="submit">Submit</button>
+</div>
+
+
+</div>
+    
+</body>
+</html>
